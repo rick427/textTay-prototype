@@ -74,7 +74,7 @@ main{
 
 .logo span{
     font-family: var(--primary-font);
-    color: var(--primary-orange-2);
+    color: var(--primary-orange);
 }
 
 .nav__list{
@@ -160,11 +160,24 @@ main{
 }
 
 .colors{
-    width: 20%;
-    margin: 2rem auto;
+    width: 40%;
+    padding: 1rem;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colors span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #777;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 .colors__list{
+    width: 50%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -172,11 +185,10 @@ main{
 }
 
 .color__item{
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50px;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0, .2);
 }
 
 .color__item:nth-child(1){
@@ -189,7 +201,7 @@ main{
     background-color: var(--primary-pink);
 }
 .color__item:nth-child(4){
-    background-color: var(--primary-deep-orange);
+    background-color: var(--primary-orange-2);
 }
 .color__item:nth-child(5){
     background-color: var(--primary-grey-2);
@@ -350,7 +362,7 @@ main{
 
 .discover__card .t2{
     letter-spacing: 1px;
-    color: var(--primary-orange-2);
+    color: var(--primary-orange);
 }
 
 .discover__card p{
@@ -368,7 +380,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-auto-rows: 235px;
     margin: 8% auto;
-    border: 2px solid var(--primary-light-pink);
+    border: 2px solid var(--primary-light-grey);
 }
 
 .deals__card{
@@ -380,7 +392,7 @@ main{
 }
 
 .deals__card.one{
-    background: var(--primary-light-pink);
+    background: var(--primary-light-grey);
 }
 
 .text-wrapper{
@@ -437,7 +449,7 @@ main{
     width: 90%;
     height: 30vh;
     margin: auto;
-    background-color: var(--primary-light-pink);
+    background-color: var(--primary-light-grey);
     background-image: url('/assets/banner-bg.png');
     background-size: cover;
     background-repeat: no-repeat;

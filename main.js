@@ -13,7 +13,7 @@ colorItem.forEach(color => {
             return root.style.setProperty('--primary-orange', 'var(--primary-pink)');
         }
         else if(event.srcElement.id === 'orange'){
-            return root.style.setProperty('--primary-orange', 'var(--primary-deep-orange)'); 
+            return root.style.setProperty('--primary-orange', 'var(--primary-orange-2)'); 
         }
         else if(event.srcElement.id === 'grey'){
             return root.style.setProperty('--primary-orange', 'var(--primary-grey-2)'); 
