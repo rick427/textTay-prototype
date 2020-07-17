@@ -24,12 +24,12 @@
 }
 
 html{
-    box-sizing: border-box;
     font-size: 62.5%;
 }
 
 body{
     padding: 2rem;
+    box-sizing: border-box;
     background: var(--primary-light-grey);
     font-family: var(--primary-font);
 }
@@ -142,6 +142,8 @@ main{
     text-align: center;
     color: var(--primary-grey);
     text-transform: capitalize;
+    animation: moveInRight 1s ease-out;
+    backface-visibility: hidden;
 }
 
 .title{
@@ -161,19 +163,78 @@ main{
     margin: 1.5rem 0;
 }
 
-.banner__wrapper-btn{
-    width: 12rem;
-    height: 3.5rem;
-    border: none;
-    text-transform: capitalize;
-    background: var(--primary-white);
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--primary-white);
     color: var(--primary-grey);
-    border-radius: 25px;
-    padding: .5rem;
-    margin-top: 3rem;
-    cursor: pointer;
-    font-weight: 600;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
 }
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn::after{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--primary-white);
+    transition: all .4s;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn-animated{
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
 
 .colors{
     width: 40%;
