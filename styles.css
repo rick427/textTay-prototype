@@ -103,6 +103,22 @@ main{
 .nav__actions li{
     display: inline-block;
     margin: 0 2rem;
+    position: relative;
+}
+
+.nav__actions li .badge{
+    top: -40%;
+    left: 70%;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-orange);
+    padding: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    color: var(--primary-grey);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .banner{
