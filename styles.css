@@ -30,7 +30,7 @@ html{
 body{
     padding: 2rem;
     box-sizing: border-box;
-    background: var(--primary-light-grey);
+    background: var(--primary-grey-3);
     font-family: var(--primary-font);
 }
 
@@ -209,10 +209,6 @@ main{
 
 .btn.alt{
     background-color: var(--primary-orange);
-}
-
-.btn.alt::after{
-    background-color: var(--pr);
 }
 
 .btn.mt-2{
@@ -618,7 +614,8 @@ main{
     font-family: var(--primary-font);
     text-transform: capitalize;
     font-size: 2rem;
-    color: var(--primary-orange-2);
+    font-weight: 600;
+    color: var(--primary-orange);
 }
 
 .footer__icons li:not(:first-child){
