@@ -205,6 +205,14 @@ main{
     opacity: 0;
 }
 
+.btn.alt{
+    background-color: var(--primary-orange);
+}
+
+.btn.mt-2{
+    margin-top: 2rem;
+}
+
 @keyframes moveInRight{
     0%{
         opacity: 0;
