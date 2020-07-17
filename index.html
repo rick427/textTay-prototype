@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <h1>Text<span>Tay</span></h1>
-            </div>
-            <ul class="nav__list">
-                <li class="nav__item">home</li>
-                <li class="nav__item">shop</li>
-                <li class="nav__item">designs</li>
-                <li class="nav__item">contact</li>
-            </ul>
-            <ul class="nav__actions">
-                <li>login</li>
-                <li><img src="assets/search.svg" alt="search"></li>
-                <li><img src="assets/heart.svg" alt="search"></li>
-                <li><img src="assets/shopping-cart.svg" alt="search"></li>
-            </ul>
-        </nav>
-    </header>
     <main>
+        <header class="header">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>Text<span>Tay</span></h1>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">home</li>
+                    <li class="nav__item">shop</li>
+                    <li class="nav__item">designs</li>
+                    <li class="nav__item">contact</li>
+                </ul>
+                <ul class="nav__actions">
+                    <li>login</li>
+                    <li><img src="assets/search.svg" alt="search"></li>
+                    <li><img src="assets/heart.svg" alt="search"></li>
+                    <li><img src="assets/shopping-cart.svg" alt="search"></li>
+                </ul>
+            </nav>
+        </header>
+        
         <section class="banner">
             <img src="assets/2.png" alt="banner">
-
+    
             <div class="banner__wrapper">
                 <h3 class="title">summer 2020 collection</h3>
                 <h4 class="subtitle">new arrivals</h4>
@@ -40,41 +41,82 @@
             </div>
         </section>
 
+        <div class="colors">
+            <ul class="colors__list">
+                <li class="color__item" id="gold">&nbsp;</li>
+                <li class="color__item" id="blue">&nbsp;</li>
+                <li class="color__item" id="pink">&nbsp;</li>
+                <li class="color__item" id="orange">&nbsp;</li>
+                <li class="color__item" id="grey">&nbsp;</li>
+            </ul>
+        </div>
+    
         <section class="products">
             <h3 class="products__title">new arrivals</h3>
             <p class="products__sub">stunning clothes that will leave you speechless</p>
-
+    
             <div class="products__grid">
                 <div class="products__card">
-                    <img src="assets/product-1-front.jpg" alt="product-front" id="image-1">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/product-1-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/product-1-back.jpg" alt="product-back">
+                        </div>
+                    </div>
                     <h3>chenille cardigan</h3>
                     <p>₦ 15,250</p>
                 </div>
                 <div class="products__card">
-                    <img src="assets/product-2-front.jpg" alt="product-front" id="image-2">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/product-2-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/product-2-back.jpg" alt="product-back">
+                        </div>
+                    </div>
                     <h3>flared trousers</h3>
                     <p>₦ 25,600</p>
                 </div>
                 <div class="products__card">
-                    <img src="assets/product-3-front.jpg" alt="product-front" id="image-3">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/product-3-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/product-3-back.jpg" alt="product-back">
+                        </div>
+                    </div>
                     <h3>long strappy dress</h3>
                     <p>₦ 10,500</p>
                 </div>
                 <div class="products__card">
-                    <img src="assets/product-4-front.jpg" alt="product-front" id="image-4">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/product-4-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/product-4-back.jpg" alt="product-back">
+                        </div>
+                    </div>
                     <h3>strappy round nect sweater</h3>
                     <p>₦ 17,500</p>
                 </div>
             </div>
         </section>
-
+    
         <section class="discover">
             <div class="discover__card">
                 <div class="discover__card-1"></div>
                 <div class="discover__card-2"></div>
+                <!-- <div class="discover__card-3"></div> -->
             </div>
             <div class="discover__card">
-                <h3>discover true equality through clothing</h3>
+                <h3>discover true style via 
+                    <span class="t1">text</span><span class="t2">Tay</span>
+                </h3>
                 <p>
                     We provide you with great suits that befit you and your lifestyle. 
                     Our suits are made from the highest quality fabrics and guaranteed 
@@ -101,107 +143,147 @@
                     tailors handle all of our cutting and sewing, ensuring precision in 
                     all production processes and paying attention to the details. 
                     Come to us and choose the best suit for your lifestyle.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates 
+                    tempora maiores ut sunt facilis aliquam sed perferendis distinctio ex aut 
+                    excepturi dicta fugit, tenetur tempore delectus? Tempore, qui a?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates 
+                    tempora maiores ut sunt facilis aliquam sed perferendis distinctio ex aut 
+                    excepturi dicta fugit, tenetur tempore delectus? Tempore, qui a?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptates 
+                    tempora maiores ut sunt facilis aliquam sed perferendis distinctio ex aut 
+                    excepturi dicta fugit, tenetur tempore delectus? Tempore, qui a?
                 </p>
             </div>
         </section>
+        
+    
+        <section class="deals">
+            <div class="deals__card one">
+                <div class="text-wrapper">
+                    <h3>deals of the day</h3>
+                    <h4>orange women's dashiki</h4>
+                    <button class="deals__btn">check it out</button>
+                </div>
+                <div class="deals__img"></div>
+            </div>
+            <div class="deals__card two">
+                <div class="text-wrapper">
+                    <h3>deals of the day</h3>
+                    <h4>mens traditional top</h4>
+                    <button class="deals__btn alt">check it out</button>
+                </div>
+                <div class="deals__img men"></div>
+            </div>
+        </section>
+    
+        <section class="products">
+            <h3 class="products__title">most popular</h3>
+            <p class="products__sub">stunning collection that will never leave you</p>
+    
+            <div class="products__grid">
+                <div class="products__card">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/new-1-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/new-1-back.jpg" alt="product-back">
+                        </div>
+                    </div>
+                    <h3>peep-toe sock ankle boots</h3>
+                    <p>₦ 5,250</p>
+                </div>
+                <div class="products__card">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/new-2-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/new-2-back.jpg" alt="product-back">
+                        </div>
+                    </div>
+                    <h3>heel blue ankle</h3>
+                    <p>₦ 15,820</p>
+                </div>
+                <div class="products__card">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/new-3-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/new-3-back.jpg" alt="product-back">
+                        </div>
+                    </div>
+                    <h3>white leather ankle</h3>
+                    <p>₦ 33,500</p>
+                </div>
+                <div class="products__card">
+                    <div class="products__card-inner">
+                        <div class="product__card-front">
+                            <img src="assets/new-4-front.jpg" alt="product-front">
+                        </div>
+                        <div class="product__card-back">
+                            <img src="assets/new-4-back.jpg" alt="product-back">
+                        </div>
+                    </div>
+                    <h3>light pink blouse</h3>
+                    <p>₦ 7,500</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="options">
+            <div class="options__card">
+                <img src="assets/icon-truck.png" alt="truck">
+                <h3>free shipping & return</h3>
+                <p>on all orders over ₦50k</p>
+            </div>
+            <div class="options__card">
+                <img src="assets/icon-support.png" alt="truck">
+                <h3>online support</h3>
+                <p>fast and clear answers</p>
+            </div>
+            <div class="options__card">
+                <img src="assets/icon-naira.png" alt="truck">
+                <h3>money back guarantee</h3>
+                <p>worry free shoping</p>
+            </div>
+            <div class="options__card">
+                <img src="assets/icon-percent.png" alt="truck">
+                <h3>generous discounts</h3>
+                <p>for loyal customers</p>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <ul class="footer__list">
+                    <li class="footer__item">home</li>
+                    <li class="footer__item">shop</li>
+                    <li class="footer__item">designs</li>
+                    <li class="footer__item">contact</li>
+                </ul>
+                <ul class="footer__icons">
+                    <li class="footer__logo">
+                        <p>Text <span>tay</span></p>
+                    </li>
+                    <li>
+                        <img src="/assets/facebook.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="/assets/twitter.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="/assets/instagram.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="/assets/youtube.svg" alt="facebook">
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </main>
 
-    <section class="deals">
-        <div class="deals__card one">
-            <div class="text-wrapper">
-                <h3>deals of the day</h3>
-                <h4>orange women's dashiki</h4>
-                <button class="deals__btn">check it out</button>
-            </div>
-            <div class="deals__img"></div>
-        </div>
-        <div class="deals__card two">
-            <div class="text-wrapper">
-                <h3>deals of the day</h3>
-                <h4>mens traditional top</h4>
-                <button class="deals__btn alt">check it out</button>
-            </div>
-            <div class="deals__img men"></div>
-        </div>
-    </section>
-
-    <section class="products">
-        <h3 class="products__title">most popular</h3>
-        <p class="products__sub">stunning collection that will never leave you</p>
-
-        <div class="products__grid">
-            <div class="products__card">
-                <img src="assets/new-1-front.jpg" alt="product-front" id="new-1">
-                <h3>peep-toe sock ankle boots</h3>
-                <p>₦ 5,250</p>
-            </div>
-            <div class="products__card">
-                <img src="assets/new-2-front.jpg" alt="product-front" id="new-2">
-                <h3>heel blue ankle</h3>
-                <p>₦ 15,820</p>
-            </div>
-            <div class="products__card">
-                <img src="assets/new-3-front.jpg" alt="product-front" id="new-3">
-                <h3>white leather ankle</h3>
-                <p>₦ 33,500</p>
-            </div>
-            <div class="products__card">
-                <img src="assets/new-4-front.jpg" alt="product-front" id="new-4">
-                <h3>light pink blouse</h3>
-                <p>₦ 7,500</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="options">
-        <div class="options__card">
-            <img src="assets/icon-truck.png" alt="truck">
-            <h3>free shipping & return</h3>
-            <p>on all orders over ₦50k</p>
-        </div>
-        <div class="options__card">
-            <img src="assets/icon-support.png" alt="truck">
-            <h3>online support</h3>
-            <p>fast and clear answers</p>
-        </div>
-        <div class="options__card">
-            <img src="assets/icon-naira.png" alt="truck">
-            <h3>money back guarantee</h3>
-            <p>worry free shoping</p>
-        </div>
-        <div class="options__card">
-            <img src="assets/icon-percent.png" alt="truck">
-            <h3>generous discounts</h3>
-            <p>for loyal customers</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <ul class="footer__list">
-                <li class="footer__item">home</li>
-                <li class="footer__item">shop</li>
-                <li class="footer__item">designs</li>
-                <li class="footer__item">contact</li>
-            </ul>
-            <ul class="footer__icons">
-                <li class="footer__logo">
-                    <p>Text <span>tay</span></p>
-                </li>
-                <li>
-                    <img src="/assets/facebook.svg" alt="facebook">
-                </li>
-                <li>
-                    <img src="/assets/twitter.svg" alt="facebook">
-                </li>
-                <li>
-                    <img src="/assets/instagram.svg" alt="facebook">
-                </li>
-                <li>
-                    <img src="/assets/youtube.svg" alt="facebook">
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <script src="/main.js"></script>
 </body>
 </html>
